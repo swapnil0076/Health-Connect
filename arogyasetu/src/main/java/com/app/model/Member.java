@@ -21,6 +21,8 @@ public class Member {
     private LocalDate dose1Date;
     private LocalDate dose2Date;
     private VaccineRegistration registration;
+    @OneToOne(cascade = CascadeType.ALL)
+    private User user;
     @OneToOne(mappedBy = "memberId",cascade = CascadeType.ALL)
     private Appointment appointment;
     @OneToOne(mappedBy = "member",cascade = CascadeType.ALL)

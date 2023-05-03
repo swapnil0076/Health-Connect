@@ -26,5 +26,8 @@ public class User {
     @OneToOne(mappedBy = "userId", cascade = CascadeType.ALL)
     private AadharCardNo aadharCardNo;
 
+    @OneToOne(mappedBy = "user",cascade = CascadeType.ALL)
+    private Member member;
+
 
 }
