@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.app</groupId>
-	<artifactId>arogyasetu</artifactId>
+	<artifactId>HealthConnect</artifactId>
 	<version>1.0-SNAPSHOT</version>
 	<name>ArogyaSetu</name>
 	<description>Covid-19 Vaccination</description>
