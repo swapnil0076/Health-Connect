@@ -1,0 +1,103 @@
+/* ==== Google Fonts ====  */
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); */
+
+
+body{
+    /* color: #a73211; */
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.l-header{
+    /* border: 2px solid red; */
+    
+    width: 100%;
+    /* position: fixed; */
+    
+    top: 0;
+    left: 0;
+    background-color: rgb(1,126,126);
+    color: #fff;
+    box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
+}
+.l-header > div{
+    width: 100%;
+    background-color: #045d5d;
+    /* text-align: center; */
+}
+.l-header > div img{
+    width: 40%;
+    border-radius: 5px;
+    padding-top: 0.8rem;
+    padding-left: 0.7rem;
+}
+.emblem_logo {
+    width: 15%;
+    /* border: 2px solid red; */
+    font-size: smaller;
+}
+.emblem_logo{
+    display: flex;
+}
+
+.emblem_logo_div1, .emblem_logo_div2{
+    /* border: 2px solid red; */
+    width: 50%;
+}
+.emblem_logo_div2{
+    width: 100%;
+    line-height: 5mm;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.nav__logo{
+    /* border: 2px solid green; */
+    font-size: xx-large;
+    margin-left: 0.2rem;
+    margin-top: 5mm;
+    padding: 0.3rem 0 0 0.5rem;
+    line-height: 0.5em;
+}
+.nav__logo p{
+    font-size: small;
+}
+.nav__menu{
+    /* border: 2px solid green; */
+}
+ul{
+    /* margin: 0; */
+    /* padding: 0; */
+    list-style: none;
+}
+.nav__list{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.nav__item{
+    padding-right: 20px;
+}
+.nav__item button{
+    color: rgb(97, 137, 17);
+    height: 40px;
+    border-radius: 40px;
+    border-color: #fff;
+    background-color: rgb(1,126,126);
+    color: #fff;
+    cursor: pointer;
+}
+.nav__item button:hover{
+    /* border-color: black; */
+    background-color: white;
+    color: rgb(1,126,126);
+
+}
