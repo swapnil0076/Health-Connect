@@ -1,0 +1,229 @@
+/* ==== Google Fonts ====  */
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); */
+
+
+body{
+    /* left: 0; */
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.l-header{
+    /* border: 2px solid red; */
+    
+    width: 100%;
+    position: fixed;
+    
+    top: 0;
+    left: 0;
+    background-color: rgb(1,126,126);
+    color: #fff;
+    box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
+}
+.l-header > div{
+    width: 100%;
+    background-color: #045d5d;
+    /* text-align: center; */
+}
+.l-header > div img{
+    width: 40%;
+    border-radius: 5px;
+    padding-top: 0.8rem;
+    padding-left: 0.7rem;
+}
+.emblem_logo {
+    width: 15%;
+    /* border: 2px solid red; */
+    font-size: smaller;
+}
+.emblem_logo{
+    display: flex;
+}
+
+.emblem_logo_div1, .emblem_logo_div2{
+    /* border: 2px solid red; */
+    width: 50%;
+}
+.emblem_logo_div2{
+    width: 100%;
+    line-height: 5mm;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.nav__logo{
+    /* border: 2px solid green; */
+    font-size: xx-large;
+    margin-left: 0.2rem;
+    margin-top: 5mm;
+    padding: 0.3rem 0 0 0.5rem;
+    line-height: 0.5em;
+}
+.nav__logo p{
+    font-size: small;
+}
+
+ul{
+    /* margin: 0; */
+    /* padding: 0; */
+    list-style: none;
+}
+.nav__list{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.nav__item{
+    padding-right: 20px;
+}
+.nav__item button{
+    height: 40px;
+    border-radius: 40px;
+    /* border-color: rgb(1, 0, 0); */
+    background-color: rgb(207, 220, 119);
+    color: rgb(41, 44, 53);
+    cursor: pointer;
+}
+.nav__item button:hover{
+    background-color: white;
+    color: rgb(1,126,126);
+}
+
+/* ======== day-3 (05-05-2023) ======= */
+.flag{
+    /* border: 1px solid red; */
+    margin-top:120px ;
+    display: flex;
+    height: 450px;
+    justify-content: center;
+    background-color: rgb(226, 239, 234);
+    padding: 20px;
+}
+.flag_div_left, .flag_div_right{
+    /* border: 3px solid green; */
+    width: 40%;
+    height: 100%;
+}
+.flag_div_left {
+    padding: 0 10px ;
+    font-weight: bold;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    /* background-color: rgb(170, 233, 212); */
+}
+.flag_div_left h2{
+    font-size: xx-large;
+}
+.flag_div_right img{
+    width: 73%;
+    border-radius: 50%;
+}
+.flag_div_left_2{
+    width: fit-content;
+    border: 2px solid red;
+    color: red;
+    padding: 0 10px;
+    border-radius: 5px;  
+}
+.vaccination_count{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #017e7e;
+    color: #fff;
+    padding: 10px 0;
+    line-height: 0.3cm;
+}
+.vaccination_count button{
+    height: 40px;
+    width: 150px;
+    border-radius: 20px;
+    font-weight: bold;
+    
+    background-color: rgb(207, 220, 119);
+    color: rgb(41, 44, 53);
+    cursor: pointer;
+}
+.vaccination_count h3{
+    font-size: x-large;
+}
+
+/* ============== */
+.steps{
+    /* border: 3px solid red; */
+    background-color: #edffff;
+    padding: 20px;
+    
+}
+.steps_left{
+    text-align: center;
+    font-weight:  bold;
+    font-size: x-large;
+    color: #045d5d;
+}
+.steps_rigth{
+    /* border: 3px solid green; */
+    /* height: 400px; */
+    display: flex;
+    justify-content: center;
+
+    
+}
+.step_r{
+    /* border: 3px solid rgb(12, 16, 126); */
+    height: auto;
+    width: 20%;
+    margin: 25px;
+    text-align: center;
+    
+}
+.step1{
+    border: 1px solid rgb(18, 126, 12);
+    border-radius: 10px;
+    width: fit-content;
+    margin: auto;
+    padding: 0px 30px;
+
+    position: relative; 
+    top: 5%;
+    background-color: white;
+    
+}
+.step-1{
+    /* border: 1px solid rgb(18, 126, 12); */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    padding-top:50px ;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: #fff;
+    border-radius: 10px;
+
+}
+.step-1 > div{
+    /* border: 2px solid red; */
+    height: 100px;
+    width: auto;
+    /* padding: 100px; */
+
+}
+
+.step-1 img{
+    width: 50%;
+    height: 100px;
+}
+.book-apt{
+    background-color: #007c7c;
+    padding: 20px 20px;
+    color: #fff;
+    line-height: 0.7cm;
+    height: 1px;
+}
