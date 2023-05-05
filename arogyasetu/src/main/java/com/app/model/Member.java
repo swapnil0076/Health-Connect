@@ -1,5 +1,6 @@
 package com.app.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.Builder;
 import lombok.Data;
@@ -23,10 +24,18 @@ public class Member {
     private VaccineRegistration registration;
     @OneToOne(cascade = CascadeType.ALL)
     private User user;
+    @JsonIgnore
     @OneToOne(mappedBy = "memberId",cascade = CascadeType.ALL)
     private Appointment appointment;
+    @JsonIgnore
     @OneToOne(mappedBy = "member",cascade = CascadeType.ALL)
     private Vaccine vaccine;
 
-
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("Member{");
+        sb.append("user=").append(user);
+        sb.append('}');
+        return sb.toString();
+    }
 }
