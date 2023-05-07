@@ -7,12 +7,14 @@ body{
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
-
+/* main{
+    right: 0px;
+} */
 .l-header{
     /* border: 2px solid red; */
     
     width: 100%;
-    position: fixed;
+    position: sticky;
     
     top: 0;
     left: 0;
@@ -100,12 +102,13 @@ ul{
 /* ======== day-3 (05-05-2023) ======= */
 .flag{
     /* border: 1px solid red; */
-    margin-top:120px ;
+    /* margin-top:120px ; */
+    margin-top: 0px;
     display: flex;
     height: 450px;
     justify-content: center;
     background-color: rgb(226, 239, 234);
-    padding: 20px;
+    padding: 30px;
 }
 .flag_div_left, .flag_div_right{
     /* border: 3px solid green; */
@@ -189,8 +192,9 @@ ul{
     border-radius: 10px;
     width: fit-content;
     margin: auto;
+    /* margin-bottom: -10px; */
     padding: 0px 30px;
-
+    /* margin-top: -500px; */
     position: relative; 
     top: 5%;
     background-color: white;
@@ -201,7 +205,7 @@ ul{
     width: 100%;
     display: flex;
     flex-direction: column;
-    
+    /* margin-top: -5%; */
     padding-top:50px ;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     background-color: #fff;
@@ -227,3 +231,4 @@ ul{
     line-height: 0.7cm;
     height: 1px;
 }
+/* =============  ============== */
