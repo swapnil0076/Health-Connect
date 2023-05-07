@@ -1,14 +1,16 @@
 package com.app.model;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
-import lombok.Builder;
-import lombok.Data;
-import lombok.Value;
+import lombok.*;
 import org.springframework.boot.context.properties.bind.DefaultValue;
 
 import java.time.LocalDate;
 @Data
+@Getter
+@Setter
 @Entity
 public class Member {
 
@@ -19,15 +21,19 @@ public class Member {
     private boolean dose1Status = false;
     @Column(columnDefinition = "boolean default false")
     private boolean dose2Status = false;
+    @Column(columnDefinition = "boolean default null")
+    @JsonFormat(pattern = "dd-MM-yyyy")
     private LocalDate dose1Date;
+    @Column(columnDefinition = "boolean default null")
+    @JsonFormat(pattern = "dd-MM-yyyy")
     private LocalDate dose2Date;
     private VaccineRegistration registration;
     @OneToOne(cascade = CascadeType.ALL)
     private User user;
-    @JsonIgnore
+    @JsonProperty(access =  JsonProperty.Access.WRITE_ONLY)
     @OneToOne(mappedBy = "memberId",cascade = CascadeType.ALL)
     private Appointment appointment;
-    @JsonIgnore
+    @JsonProperty(access =  JsonProperty.Access.WRITE_ONLY)
     @OneToOne(mappedBy = "member",cascade = CascadeType.ALL)
     private Vaccine vaccine;
 

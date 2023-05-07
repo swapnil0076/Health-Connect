@@ -27,4 +27,21 @@ public class GlobalExceptionHandler {
         return new ResponseEntity<>(err, HttpStatus.BAD_REQUEST);
     }
 
+    @ExceptionHandler(UserException.class)
+    public ResponseEntity<ErrorDetails> UserExceptionHandler(MemberException me, WebRequest wr){
+
+        ErrorDetails err = new ErrorDetails(LocalDateTime.now(),me.getMessage(),wr.getDescription(false));
+
+        return new ResponseEntity<>(err, HttpStatus.BAD_REQUEST);
+    }
+
+    @ExceptionHandler(AppointmentException.class)
+    public ResponseEntity<ErrorDetails> AppointmentExceptionHandler(MemberException me, WebRequest wr){
+
+        ErrorDetails err = new ErrorDetails(LocalDateTime.now(),me.getMessage(),wr.getDescription(false));
+
+        return new ResponseEntity<>(err, HttpStatus.BAD_REQUEST);
+    }
+
+
 }

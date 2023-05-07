@@ -14,6 +14,6 @@ public class PancardNo {
     @Size(min = 10, max = 10,message = "PanCard must have 10")
     @Length(max = 10,message = "PanCard must have 10")
     private String number;
-    @OneToOne
+    @OneToOne(mappedBy = "pancardNo",cascade = CascadeType.ALL)
     private User userId;
 }

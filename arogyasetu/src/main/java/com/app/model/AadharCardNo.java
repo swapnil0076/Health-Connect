@@ -11,10 +11,10 @@ public class AadharCardNo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer Id;
-    @Min(value = 12,message = "Aaddhar number must have 12 digits")
-    @Max(value = 12 ,message = "Aadahar number must have 12 digits")
+//    @Min(value = 12,message = "Aaddhar number must have 12 digits")
+//    @Max(value = 12 ,message = "Aadahar number must have 12 digits")
     private Long number;
-    @OneToOne
+    @OneToOne(mappedBy = "aadharCardNo", cascade = CascadeType.ALL)
     private User userId;
 
 }
