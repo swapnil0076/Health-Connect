@@ -1,7 +1,10 @@
 package com.app.model;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.Future;
+import jakarta.validation.constraints.FutureOrPresent;
 import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.PastOrPresent;
 import lombok.Data;
 import org.springframework.format.annotation.DateTimeFormat;
 
@@ -10,10 +13,12 @@ import java.time.LocalDate;
 @Data
 public class Appointment {
     @Id
-    private Long bookingId;
-    @NotNull
+    @GeneratedValue(strategy =  GenerationType.IDENTITY)
+    private Integer bookingId;
+
     private Long mobNo;
-    @DateTimeFormat(pattern = "dd-MM-yyyy")
+    @FutureOrPresent
+//    @DateTimeFormat(pattern = "dd-MM-yyyy")
     private LocalDate dateOfBooking;
     @Column(columnDefinition = "boolean default false")
     private boolean bookingStatus;
