@@ -21,11 +21,11 @@ public class Member {
     private boolean dose1Status = false;
     @Column(columnDefinition = "boolean default false")
     private boolean dose2Status = false;
-    @Column(columnDefinition = "boolean default null")
-    @JsonFormat(pattern = "dd-MM-yyyy")
+    @Column(columnDefinition = "Date default null")
+    @JsonFormat(pattern = "yyyy-MM-dd")
     private LocalDate dose1Date;
-    @Column(columnDefinition = "boolean default null")
-    @JsonFormat(pattern = "dd-MM-yyyy")
+    @Column(columnDefinition = "Date default null")
+    @JsonFormat(pattern = "yyyy-MM-dd")
     private LocalDate dose2Date;
     private VaccineRegistration registration;
     @OneToOne(cascade = CascadeType.ALL)

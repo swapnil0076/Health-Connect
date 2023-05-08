@@ -43,5 +43,13 @@ public class GlobalExceptionHandler {
         return new ResponseEntity<>(err, HttpStatus.BAD_REQUEST);
     }
 
+    @ExceptionHandler(VaccineInventoryException.class)
+    public ResponseEntity<ErrorDetails> VaccineInventoryExceptionHandler(MemberException me, WebRequest wr){
+
+        ErrorDetails err = new ErrorDetails(LocalDateTime.now(),me.getMessage(),wr.getDescription(false));
+
+        return new ResponseEntity<>(err, HttpStatus.BAD_REQUEST);
+    }
+
 
 }

@@ -22,23 +22,36 @@ public class AppointmentServiceImpl implements AppointmentService {
 
     @Override
     public List<Appointment> allAppointments() throws AppointmentException {
-        return null;
+
+      List<Appointment> appointments =   appointmentRepository.findAll();
+        if(appointments.isEmpty()){
+            throw new AppointmentException("No Appointment Found");
+        }else
+        return appointments;
     }
 
     @Override
     public Appointment getAppointmentById(Integer bookingId) throws AppointmentException {
-        return null;
+
+        Optional<Appointment> appointment = appointmentRepository.findById(bookingId);
+
+        if(appointment.isPresent()){
+            return appointment.get();
+        }else{
+            throw new AppointmentException("Appointment not Found with this : " +bookingId);
+        }
     }
 
     @Override
-    public String addAppointment(Appointment appointment,Integer member_Id) throws AppointmentException {
+    public String addAppointment(Member member1) throws AppointmentException {
 
-       Optional<Member> member =  memberRepository.findById(member_Id);
+       Optional<Member> member =  memberRepository.findById(member1.getId());
         if(member.isPresent()){
-            appointmentRepository.save(appointment);
+            member.get().setDose1Date(member1.getDose1Date());
+            memberRepository.save(member1);
             return "Appointment Booked";
         }else{
-            throw new AppointmentException("Member not Found with this Id :"+member_Id);
+            throw new AppointmentException("Member not Found with this Id :"+member1.getId());
         }
 
 
@@ -47,11 +60,27 @@ public class AppointmentServiceImpl implements AppointmentService {
 
     @Override
     public Appointment updateAppointment(Appointment appointment) throws AppointmentException {
-        return null;
+        Optional<Appointment> appointment1 = appointmentRepository.findById(appointment.getBookingId());
+
+        if(appointment1.isPresent()){
+            appointment1.get();
+            appointmentRepository.save(appointment);
+            return appointment1.get();
+        }else{
+            throw new AppointmentException("Appointment not Found with this : " +appointment.getBookingId());
+        }
     }
 
     @Override
     public String deleteAppointment(Integer apId) throws AppointmentException {
-        return null;
+        Optional<Appointment> appointment1 = appointmentRepository.findById(apId);
+
+        if(appointment1.isPresent()){
+
+            appointmentRepository.delete(appointment1.get());
+            return "Deleted Appointment";
+        }else{
+            throw new AppointmentException("Appointment not Found with this : " +apId);
+        }
     }
 }

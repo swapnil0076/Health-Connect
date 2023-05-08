@@ -18,7 +18,7 @@ public class Appointment {
 
     private Long mobNo;
     @FutureOrPresent
-    @DateTimeFormat(pattern = "dd-MM-yyyy")
+//    @DateTimeFormat(pattern = "dd-MM-yyyy")
     private LocalDate dateOfBooking;
     @Column(columnDefinition = "boolean default false")
     private boolean bookingStatus;
