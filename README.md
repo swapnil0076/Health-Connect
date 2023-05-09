@@ -139,5 +139,9 @@ For Covid-19 new Vaccine are coming in the Market.
  - Deepanshu
  - Lokesh
  
+## Acknowledgments
+We are always looking for ways to improve our Application, and I would like to request your feedback on our project. Your opinions matter for us and your feedback is used to improve how we work and ensure we deliver a consistently high-quality service.
+Thank You.
+
 <img  src ="https://user-images.githubusercontent.com/58816804/237030373-09c1e1b7-9e9e-4b79-9481-150c7c35f518.jpeg"/>
  
