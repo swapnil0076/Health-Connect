@@ -103,7 +103,7 @@ This Application Consist 7 Modules
 
 
 <h1></h1>
-## Roadmap
+## Roadmap ## <br/>
  - [✅] Made ER Diagram <br/>
  - [✅] Added POJO classes <br/>
  - [✅] Made mappings <br/>
@@ -115,7 +115,7 @@ This Application Consist 7 Modules
  - [✅] Tested Using Postman<br/>
  - [✅] Tested Using Swagger<br/>
  <p align="right">(<a href="#readme-top">back to top</a>)</p>
- ## Contributors
+ ## Contributors ## <br/>
  - Swapnil Dhiman <br/>
  - Deepanshu Deep <br/>
  - Lokesh Gola <br/>
