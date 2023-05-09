@@ -10,7 +10,7 @@
 
 </br>
 <h1>About the Project</h1>
-<img src = "https://user-images.githubusercontent.com/58816804/237005313-b1c19c5a-eacf-4d8f-ad42-4d2f37be0e12.jpg"/>
+<img src = "https://github.com/swapnil0076/swift-book-7091/assets/58816804/87e07d23-442e-4f6f-acfc-8e2803b2ed7c"/>
 
 <h2>Case Problem</h2>
 <p>Government of India is taking all necessary steps to ensure that the nation is prepared to face the challenge and threat posed by the growing contagion of COVID-19.
@@ -68,7 +68,7 @@ First clone the project and let STS4 build its dependecies. Maven --> Update Pro
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/nileshs23/dear-shade-414
+   git clone https://github.com/swapnil0076/swift-book-7091.git
    ```
 2. Add MVN Dependencies
 
@@ -93,48 +93,17 @@ This Application Consist 7 Modules
 - Vaccine Inventory Module.
 - Search Module.
 
-## Vaccine Retistration Module
-This Module Will Take User Mobile Number For Registration.
-
-- User Can Add The Member In the Member List.
-- User Can See the Status Of Each Member.
- 
-## Booking AppointMent Module
-- In this module User can Serach Member and see the availability of Vaccination Center.
-- User can select center, book slots.
-- User can book appointment for particular data.
- 
-## Vaccination Center Module
- This Module Is for Admin.
-
-- Admin can add Center for Vaccination along with its address,city,pincode.
-- This Module is Capable Of Providing Center Details as per State, City Or Pincode.
- 
-## Vaccine Module
-For Covid-19 new Vaccine are coming in the Market.
-- All Vaccines Enteries Should Be Added And Managed By Admin.
-
-## Vaccine Inventory Module
-- This Module is Primarly Responsible for Enteries of Vaccines Centerwise On a given Date.
-
-## Search Module
-- Module Should Be Capable Of Seraching IdCards Of Users.
-- Vaccine Registration.
-- Member History.
-- Vaccination Center.
-
-
 ## Roadmap
- - [x] Made ER Diagram
- - [x] Added POJO classes
- - [x] Made mappings
- - [x] Designed Database using mySql 8.0
- - [x] Added Additional Exceptions and Dependencies.
- - [x] Added "signUp" logics with Controlller.
- - [x] Added "Login" logics with Controlller.
- - [x] Added "ID" logics with Controlller.
- - [x] Tested Using Postman
- - [x] Tested Using Swagger
+ - [✅] Made ER Diagram
+ - [✅] Added POJO classes
+ - [✅] Made mappings
+ - [✅] Designed Database using MYSQL
+ - [✅] Added Additional Exceptions and Dependencies.
+ - [✅] Added "signUp" logics with Controlller.
+ - [✅] Added "Login" logics with Controlller.
+ - [✅] Added "ID" logics with Controlller.
+ - [✅] Tested Using Postman
+ - [✅] Tested Using Swagger
  
  ## Contributors
  - Swapnil Dhiman
