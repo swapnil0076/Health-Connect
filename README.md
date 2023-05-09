@@ -98,12 +98,12 @@ This Module Will Take User Mobile Number For Registration.
 
 - User Can Add The Member In the Member List.
 - User Can See the Status Of Each Member.
-- 
+ 
 ## Booking AppointMent Module
 - In this module User can Serach Member and see the availability of Vaccination Center.
 - User can select center, book slots.
 - User can book appointment for particular data.
-- 
+ 
 ## Vaccination Center Module
  This Module Is for Admin.
 
