@@ -116,9 +116,9 @@ This Application Consist 7 Modules
  - [✅] Tested Using Swagger<br/>
  <p align="right">(<a href="#readme-top">back to top</a>)</p>
  ## Contributors
- - Swapnil Dhiman
- - Deepanshu Deep
- - Lokesh Gola
+ - Swapnil Dhiman <br/>
+ - Deepanshu Deep <br/>
+ - Lokesh Gola <br/>
  <p align="right">(<a href="#readme-top">back to top</a>)</p>
  
 ## Acknowledgments
