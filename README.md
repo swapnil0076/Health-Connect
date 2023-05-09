@@ -70,7 +70,7 @@ First clone the project and let STS4 build its dependecies. Maven --> Update Pro
    ```sh
    git clone https://github.com/swapnil0076/swift-book-7091.git
    ```
-2. Add MVN Dependencies
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -93,6 +93,14 @@ This Application Consist 7 Modules
 - Vaccine Inventory Module.
 - Search Module.
 
+<br/>
+<h1>Spring Security Working Map</h1>
+<img src = "https://github.com/swapnil0076/swift-book-7091/assets/58816804/a4979ead-b892-4bed-ab8b-4c02dd0076a4"/>
+<br/>
+
+
+
+<h1></h1>
 ## Roadmap
  - [✅] Made ER Diagram
  - [✅] Added POJO classes
