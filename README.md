@@ -91,5 +91,5 @@ This Application Consist 7 Modules
 - Vaccine Inventory Module.
 - Search Module.
 
-<img  src ="https://user-images.githubusercontent.com/58816804/237027776-f4d39a9b-5a93-40cf-8215-790d7e0bc265.jpg"/>
+<img  src ="https://user-images.githubusercontent.com/58816804/237030373-09c1e1b7-9e9e-4b79-9481-150c7c35f518.jpeg"/>
  
