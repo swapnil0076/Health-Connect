@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Health connect frontend/styles/index.css">
+    <link rel="stylesheet" href="/Health connect frontend/styles/signup.css">
+    <title>Signup</title>
+</head>
+<body>
+    
+     <!--============ Navbar ===========-->
+
+     <header class="l-header">
+        <div>
+            <div class="emblem_logo">
+                <div class="emblem_logo_div1"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Emblem_of_India.svg/800px-Emblem_of_India.svg.png" alt=""></div>
+                <div class="emblem_logo_div2"><p>Ministry of Health and Family Welfare</p></div>
+            </div> 
+                
+        </div>
+        <nav class="nav bd-grid">
+            <div class="nav__logo"> 
+                <a href="#" >CO-WIN</a>
+                <p >Winning Over Covid-19</p>
+            </div>
+               
+            <div id="nav-menu" class="nav__menu">
+               
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#" class="nav-link  ">ABHA(Health ID)</a></li>
+                    <li class="nav__item"><a href="#" class="nav-link ">DASHBOARD</a></li>
+                    <li class="nav__item"><a href="#" class="nav-link ">VERIFY CERTIFICATE </a></li>    
+                    
+                    <li class="nav__item"><a href="#" class="nav-link ">FAQ</a></li>   
+                    <li class="nav__item"><a href="#" class="nav-link ">PARTNERS</a></li>
+                    <li class="nav__item"><a href="/Health connect frontend/signup.html" class=" nav-link "><button>REGISTER/SIGN IN</button></a></li>
+                    <li class="nav__item"><a href="/Health connect frontend/login.html" class=" nav-link "><button>LOG IN</button></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- <br>
+    <hr> -->
+    <!--================= body ==============-->
+    <main>
+        <section class="signup">
+            <div class="sign-up">
+                <div class="sign-up_imgs">
+                    <img src="/Health connect frontend/assets/login-family.svg" alt="">
+                    <img src="/Health connect frontend/assets/building-icon.svg" alt="">
+                </div>
+
+                <div class="right-pan">
+                    <h2>Register or Sign Up for Vaccination</h2>
+                    
+                    <!-- <form class="form" action="">
+                        <input type="text" placeholder=""><br>
+                        <input type="text" placeholder=""><br>
+                        <input type="text" placeholder=""><br>
+                        <input type="text" placeholder=""><br>
+                        <input type="text" placeholder=""><br>
+                        <input type="text" placeholder=""><br>
+                    </form> -->
+
+                    <!-- private Integer id;
+                        private String name;
+                        private LocalDate dob;
+                        private String gender;
+                        private String address;
+                        
+                        private String password;
+                        
+                        private String AadharNo;
+                        private String panNo;
+                        private String city;
+                        private String state;
+                        private String pincode; -->
+
+                    <form class="form" action="doit" id="doit" method="post">
+                        <label>
+                            Name
+                            <input id="name" name="name" type="text" placeholder="Enter Name"/>
+                        </label>
+                        <label>
+                            DOB
+                            <input id="phone" name="phone" type="date" placeholder="Enter DOB"/>
+                        </label>
+                        <label>
+                            Gender
+                            <input id="year" name="year" type="text" placeholder="Enter Gender"/>
+                        </label>
+                        <label>
+                            Address
+                            <input id="name" name="name" type="text" placeholder="Enter Address"/>
+                        </label>
+                        <label>
+                            Password
+                            <input id="phone" name="phone" type="text" placeholder="Enter Password"/>
+                        </label>
+                        <label>
+                            Aadhar Number
+                            <input id="phone" name="phone" type="text" placeholder="Enter Aadhar Number"/>
+                        </label>
+                        <label>
+                            Pan Number
+                            <input id="phone" name="phone" type="text" placeholder="Enter Pan Number"/>
+                        </label>
+                        <button class="btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--================= footer ==============-->
+    <footer>
+        <section class="footer">
+            <div class="footer_blocks">
+                <h3>VACCINATION SERVICES</h3>
+                <div></div>
+                <p>Register Member</p>
+                <p>Search Vaccination Centers</p>
+                <p>Book Vaccination Slots</p>
+            </div>
+            <div class="footer_blocks">
+                <h3>PLATFORMS</h3>
+                <div></div>
+                <p>Co-WIN International</p>
+                <p>Vaccinator</p>
+                <p>Department Login</p>
+            </div>
+            <div class="footer_blocks">
+                <h3>RESOURCES</h3>
+                <div></div>
+                <p>How To Get Vaccinated</p>
+                <p>Dos and Don'ts</p>
+                <p>Overview</p>
+            </div>
+            <div class="footer_blocks">
+                <h3>SUPPORT</h3>
+                <div></div>
+                <p>Frequently Asked Questions</p>
+                <p>Certificate Corretions</p>
+                <p></p>
+            </div>
+            <div class="footer_blocks">
+                <h3>CONTACT US</h3>
+                <div></div>
+                <p>Helpline: +91-11-23978046 (Toll Free - 1075)</p>
+                <p>Technical Helpline: 0120-4783222</p>
+                <p></p>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>

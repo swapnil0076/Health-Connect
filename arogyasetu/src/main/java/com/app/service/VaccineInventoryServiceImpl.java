@@ -2,7 +2,9 @@ package com.app.service;
 
 import com.app.Exception.VaccineInventoryException;
 import com.app.model.Vaccine;
+import com.app.model.VaccineCenter;
 import com.app.model.VaccineInventory;
+import com.app.repository.VaccineCenterRepository;
 import com.app.repository.VaccineInventoryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -13,6 +15,9 @@ import java.util.Optional;
 
 @Service
 public class VaccineInventoryServiceImpl implements VaccineInventoryService{
+
+    @Autowired
+    VaccineCenterRepository centerRepository;
 
     @Autowired
     VaccineInventoryRepository inventoryRepository;
@@ -41,11 +46,20 @@ public class VaccineInventoryServiceImpl implements VaccineInventoryService{
     }
 
     @Override
-    public VaccineInventory addInventoryCount(VaccineInventory vaccineInventory) throws VaccineInventoryException {
+    public VaccineInventory addInventoryCount(VaccineInventory vaccineInventory,Integer centerId) throws VaccineInventoryException {
 
-         inventoryRepository.save(vaccineInventory);
+        Optional<VaccineCenter> center =  centerRepository.findById(centerId);
 
-        return vaccineInventory;
+        if(center.isPresent()){
+            inventoryRepository.save(vaccineInventory);
+            return vaccineInventory;
+        }else{
+            throw new VaccineInventoryException();
+        }
+
+
+
+
     }
 
     @Override

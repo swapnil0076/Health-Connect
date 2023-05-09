@@ -74,7 +74,7 @@ public class VaccineCenterController {
         
     	VaccineCenter center = serviceImpl.getVaccineCenter(centerId);
         
-    	return ResponseEntity.ok(center);
+    	return new ResponseEntity<>(center,HttpStatus.OK);
     
     }
 

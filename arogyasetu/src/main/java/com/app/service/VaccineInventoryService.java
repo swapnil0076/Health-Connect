@@ -12,7 +12,7 @@ public interface VaccineInventoryService {
     public List<VaccineInventory> getAllInventory() throws VaccineInventoryException;
     public VaccineInventory getVaccineInventoryByCenter(int centerId) throws VaccineInventoryException;
 
-    public VaccineInventory addInventoryCount(VaccineInventory vaccineInventory) throws VaccineInventoryException;
+    public VaccineInventory addInventoryCount(VaccineInventory vaccineInventory,Integer centerId) throws VaccineInventoryException;
 
    public VaccineInventory updateVaccineInventory(VaccineInventory inventory)throws VaccineInventoryException;
 

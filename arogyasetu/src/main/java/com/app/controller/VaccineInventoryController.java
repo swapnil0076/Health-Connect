@@ -38,10 +38,10 @@ public class VaccineInventoryController {
     }
 
 
-    @PostMapping("/inventory")
-    public ResponseEntity<VaccineInventory> addInventoryCount(@RequestBody VaccineInventory vaccineInventory) throws VaccineInventoryException {
+    @PostMapping("/inventory/{centerId}")
+    public ResponseEntity<VaccineInventory> addInventoryCount(@RequestBody VaccineInventory vaccineInventory,@PathVariable  Integer centerId) throws VaccineInventoryException {
 
-       return new ResponseEntity<>(vaccineInventoryService.addInventoryCount(vaccineInventory),HttpStatus.OK);
+       return new ResponseEntity<>(vaccineInventoryService.addInventoryCount(vaccineInventory,centerId),HttpStatus.OK);
 
     }
 
