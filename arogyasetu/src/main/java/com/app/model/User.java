@@ -5,6 +5,8 @@ import lombok.Data;
 
 import java.time.LocalDate;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 @Entity
 @Data
 public class User {
@@ -26,6 +28,7 @@ public class User {
     @OneToOne(mappedBy = "userId", cascade = CascadeType.ALL)
     private AadharCardNo aadharCardNo;
 
+    @JsonIgnore
     @OneToOne(mappedBy = "user",cascade = CascadeType.ALL)
     private Member member;
 

@@ -5,6 +5,8 @@ import lombok.Data;
 
 import java.util.*;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import java.time.LocalDate;
 
 @Entity
@@ -13,8 +15,10 @@ public class VaccineInventory {
 @Id
 @GeneratedValue(strategy = GenerationType.IDENTITY)
     private  Integer inventoryId;
+
     private LocalDate date;
 
+   
     @OneToOne(mappedBy = "inventory",cascade = CascadeType.ALL)
     private VaccineCenter centerCode;
 

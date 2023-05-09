@@ -13,6 +13,8 @@ public class VaccineCount {
     private double price;
     @ManyToOne(cascade =  CascadeType.ALL)
     private VaccineInventory inventory_Id;
+    
+    
     @OneToOne(cascade = CascadeType.ALL)
     private Vaccine vaccine_Id;
 
