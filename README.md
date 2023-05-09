@@ -74,4 +74,22 @@ First clone the project and let STS4 build its dependecies. Maven --> Update Pro
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<h2>ER Diagram</h2>
+<img src = "https://user-images.githubusercontent.com/58816804/237027318-c2b00d15-c863-42ff-8cba-a2d5cd588c5a.png"/>
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- USAGE EXAMPLES -->
+## Modules
+This Application Consist 7 Modules
+
+- Vaccine Registration Module
+- Booking Appointment Module.
+- Vaccination Center Module.
+- Vaccine Module.
+- Vaccine Inventory Module.
+- Search Module.
+
+<img  src ="https://user-images.githubusercontent.com/58816804/237027776-f4d39a9b-5a93-40cf-8215-790d7e0bc265.jpg"/>
  
