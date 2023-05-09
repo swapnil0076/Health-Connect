@@ -7,4 +7,8 @@
 
   <h3 align="center">Covid-19 Vaccination Registration Using REST Api</h3>
 <p align="center">We tried to mimic real world Covid-19 module. And designe according to that.</p>
+
+</br>
+<h1>About the Project</h1>
+<img src = "https://user-images.githubusercontent.com/58816804/237005313-b1c19c5a-eacf-4d8f-ad42-4d2f37be0e12.jpg"/>
  
