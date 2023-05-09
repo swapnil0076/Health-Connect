@@ -137,9 +137,9 @@ For Covid-19 new Vaccine are coming in the Market.
  - [x] Tested Using Swagger
  
  ## Contributors
- - Swapnil
- - Deepanshu
- - Lokesh
+ - Swapnil Dhiman
+ - Deepanshu Deep
+ - Lokesh Gola
  
 ## Acknowledgments
 We are always looking for ways to improve our Application, and I would like to request your feedback on our project. Your opinions matter for us and your feedback is used to improve how we work and ensure we deliver a consistently high-quality service.
