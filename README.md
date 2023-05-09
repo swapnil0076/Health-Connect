@@ -25,4 +25,12 @@ The objective is to handhold the citizens to register and schedule an appointmen
 <p>
   This application aims to make the process of getting vaccinated against COVID-19 more accessible and convenient for citizens. Through the online registration and scheduling feature, individuals can choose their preferred vaccination centers and schedule their appointments with ease. The self-registration module ensures accurate identification of eligible candidates for vaccination, ensuring a smooth and efficient process. The application's goal is to assist citizens in navigating the vaccination process, from registration to scheduling, and ultimately, receiving their much-needed vaccines.
 </p>
+
+
+### Built With
+
+Tech Stack :
+
+[![My Skills](https://skillicons.dev/icons?i=java,spring,maven,mysql,github,postman,hibernate,html,vscode&theme=light)](https://skillicons.dev)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
  
