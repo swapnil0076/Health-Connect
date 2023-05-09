@@ -77,6 +77,8 @@ First clone the project and let STS4 build its dependecies. Maven --> Update Pro
 <h2>ER Diagram</h2>
 <img src = "https://user-images.githubusercontent.com/58816804/237027318-c2b00d15-c863-42ff-8cba-a2d5cd588c5a.png"/>
 
+<h2>Related Interfaces</h2>
+<img  src ="https://user-images.githubusercontent.com/58816804/237030373-09c1e1b7-9e9e-4b79-9481-150c7c35f518.jpeg"/>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -144,5 +146,5 @@ We are always looking for ways to improve our Application, and I would like to r
 
 Thank You.
 
-<img  src ="https://user-images.githubusercontent.com/58816804/237030373-09c1e1b7-9e9e-4b79-9481-150c7c35f518.jpeg"/>
+
  
