@@ -11,6 +11,6 @@ import java.time.LocalDate;
 @Data
 public class VaccineRegistration {
     private Long mobNo;
-    private LocalDate dateOfRegistration;
+    private LocalDate dateOfRegistration = LocalDate.now();
 
 }
