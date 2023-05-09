@@ -33,4 +33,45 @@ Tech Stack :
 
 [![My Skills](https://skillicons.dev/icons?i=java,spring,maven,mysql,github,postman,hibernate,html,vscode&theme=light)](https://skillicons.dev)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+<!-- GETTING STARTED -->
+## Getting Started
+
+To get a local copy up and running follow these simple example steps.
+
+### Prerequisites
+
+This is an example of how to list things you need to use the software and how to install them.
+  
+  * Spring Tool Suite 4
+
+ ```sh
+   https://spring.io/tools
+   ```
+  
+   * Maven Dependencies
+
+ ```sh
+   https://mvnrepository.com/
+   ```
+   
+   * Lombok
+
+ ```sh
+   [https://mvnrepository.com/](https://projectlombok.org/download)
+   ```
+
+### Installation
+
+First clone the project and let STS4 build its dependecies. Maven --> Update Project -->Run as SpringBoot
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/nileshs23/dear-shade-414
+   ```
+2. Add MVN Dependencies
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
  
