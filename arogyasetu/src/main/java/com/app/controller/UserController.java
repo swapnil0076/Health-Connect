@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Optional;
 
 @RestController
+@CrossOrigin("*")
 @RequestMapping("/app")
 public class UserController {
 
@@ -35,7 +36,7 @@ public class UserController {
     }
 
     @PostMapping("/user")
-    public ResponseEntity<User> addNewUserHandler(@Valid @RequestBody Member member){
+    public ResponseEntity<User> addNewUserHandler( @RequestBody Member member){
 
         User user1 = userService.addNewUser(member);
 

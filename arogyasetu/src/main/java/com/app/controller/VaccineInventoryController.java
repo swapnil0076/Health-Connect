@@ -15,6 +15,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/app")
+@CrossOrigin("*")
 public class VaccineInventoryController {
 
     @Autowired

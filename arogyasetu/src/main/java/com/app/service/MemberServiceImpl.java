@@ -1,6 +1,7 @@
 package com.app.service;
 
 import com.app.Exception.MemberException;
+import com.app.Exception.MemberNotFoundException;
 import com.app.model.Member;
 import com.app.model.User;
 import com.app.repository.MemberRepository;
@@ -9,6 +10,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDate;
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -100,4 +103,20 @@ public class MemberServiceImpl implements MemberService{
 
 
     }
+
+    public List<Member> getMembersByDateOfRegistration(LocalDate dateOfRegistration) throws MemberNotFoundException {
+        List<Member> members = memberRepository.findByRegistrationDateOfRegistration(dateOfRegistration);
+        if (members.isEmpty()) {
+            throw new MemberNotFoundException("No members found with date of registration: " + dateOfRegistration);
+        }
+        return members;
+    }
+
+
+
+    public List<Member> getMembersByUser(Integer userId) {
+
+        return memberRepository.findByUser_Id(userId);
+    }
+
 }

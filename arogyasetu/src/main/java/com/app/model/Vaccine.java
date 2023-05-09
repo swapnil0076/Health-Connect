@@ -10,7 +10,7 @@ public class Vaccine {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer Id;
-    private String VaccineName;
+    private String vaccineName;
     private String description;
 
     @OneToOne(mappedBy = "vaccine_Id",cascade = CascadeType.ALL)
