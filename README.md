@@ -94,34 +94,38 @@ This Application Consist 7 Modules
 - Search Module.
 
 <br/>
+<div align = "center">
 <h1>Spring Security Working Map</h1>
 <img src = "https://github.com/swapnil0076/swift-book-7091/assets/58816804/a4979ead-b892-4bed-ab8b-4c02dd0076a4"/>
 <br/>
+  </div>
 
 
 
 <h1></h1>
 ## Roadmap
- - [✅] Made ER Diagram
- - [✅] Added POJO classes
- - [✅] Made mappings
- - [✅] Designed Database using MYSQL
- - [✅] Added Additional Exceptions and Dependencies.
- - [✅] Added "signUp" logics with Controlller.
- - [✅] Added "Login" logics with Controlller.
- - [✅] Added "ID" logics with Controlller.
- - [✅] Tested Using Postman
- - [✅] Tested Using Swagger
- 
+ - [✅] Made ER Diagram <br/>
+ - [✅] Added POJO classes <br/>
+ - [✅] Made mappings <br/>
+ - [✅] Designed Database using MYSQL <br/>
+ - [✅] Added Additional Exceptions and Dependencies.<br/>
+ - [✅] Added "signUp" logics with Controlller.<br/>
+ - [✅] Added "Login" logics with Controlller.<br/>
+ - [✅] Added "ID" logics with Controlller.<br/>
+ - [✅] Tested Using Postman<br/>
+ - [✅] Tested Using Swagger<br/>
+ <p align="right">(<a href="#readme-top">back to top</a>)</p>
  ## Contributors
  - Swapnil Dhiman
  - Deepanshu Deep
  - Lokesh Gola
+ <p align="right">(<a href="#readme-top">back to top</a>)</p>
  
 ## Acknowledgments
 We are always looking for ways to improve our Application, and I would like to request your feedback on our project. Your opinions matter for us and your feedback is used to improve how we work and ensure we deliver a consistently high-quality service.
 
 Thank You.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
  
