@@ -1,131 +1,100 @@
-<a name="readme-top"></a> 
+# Health Connect
 
+Health Connect is a vaccination registration and appointment-management platform. It combines a Spring Boot REST API with a responsive React frontend for citizens and healthcare teams.
 
-  <h1 align="center">Health Connect</h1>
-<div  align="center" ><img src = "https://user-images.githubusercontent.com/58816804/236993158-8f2d8b7f-d0cc-4424-98eb-6cab0106c983.jpg"/></div>
+## Current frontend
 
+The frontend has been migrated from the legacy static HTML implementation to Vite + React.
 
-  <h3 align="center">Covid-19 Vaccination Registration Using REST Api</h3>
-<p align="center">We tried to mimic real world Covid-19 module. And designe according to that.</p>
+Implemented routes:
 
-</br>
-<h1>About the Project</h1>
-<img src = "https://github.com/swapnil0076/swift-book-7091/assets/58816804/87e07d23-442e-4f6f-acfc-8e2803b2ed7c"/>
+- `/` — public Health Connect landing page
+- `/login` — secure login experience
+- `/signup` — multi-field citizen registration experience
+- `/dashboard` — vaccination overview with appointment, family, progress and quick-action cards
 
-<h2>Case Problem</h2>
-<p>Government of India is taking all necessary steps to ensure that the nation is prepared to face the challenge and threat posed by the growing contagion of COVID-19.
-This application will facilitate the citizen with an option to register and schedule the vaccination session online in Centers of their choice. The Citizen self-registration module will ensure fool-proof identification of deserving candidates for receiving the vaccines.
-The objective is to handhold the citizens to register and schedule an appointment for vaccination 
-</p>
+The new interface includes responsive layouts for desktop, tablet and mobile, reusable UI patterns, accessible form labels, dashboard states, appointment summaries, vaccination progress, family management entry points and support content.
 
+The React frontend is located in [`frontend/`](frontend/).
 
-<br/>
+## Technology stack
 
-<h2>🔉Our Application🔉</h2>
-<p>
-  This application aims to make the process of getting vaccinated against COVID-19 more accessible and convenient for citizens. Through the online registration and scheduling feature, individuals can choose their preferred vaccination centers and schedule their appointments with ease. The self-registration module ensures accurate identification of eligible candidates for vaccination, ensuring a smooth and efficient process. The application's goal is to assist citizens in navigating the vaccination process, from registration to scheduling, and ultimately, receiving their much-needed vaccines.
-</p>
+### Frontend
 
-<br/>
-### Built With
+- React 19
+- Vite 8
+- React Router 7
+- CSS with responsive design tokens and reusable component styles
 
-Tech Stack :
+### Backend
 
-[![My Skills](https://skillicons.dev/icons?i=java,spring,maven,mysql,github,postman,hibernate,html,vscode&theme=light)](https://skillicons.dev)
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+- Java 17
+- Spring Boot 3
+- Spring Web and Spring Security
+- Spring Data JPA / Hibernate
+- MySQL
+- JWT authentication
+- SpringDoc OpenAPI
 
+## Run the frontend
 
-<!-- GETTING STARTED -->
-## Getting Started
+```bash
+cd frontend
+npm install
+npm run dev
+```
 
-To get a local copy up and running follow these simple example steps.
+Open [http://localhost:5173](http://localhost:5173).
 
-### Prerequisites
+Create a production build with:
 
-This is an example of how to list things you need to use the software and how to install them.
-  
-  * Spring Tool Suite 4
+```bash
+cd frontend
+npm run build
+```
 
- ```sh
-   https://spring.io/tools
-   ```
-  
-   * Maven Dependencies
+## Run the backend
 
- ```sh
-   https://mvnrepository.com/
-   ```
-   
-   * Lombok
+The backend application is in [`arogyasetu/`](arogyasetu/).
 
- ```sh
-   [https://mvnrepository.com/](https://projectlombok.org/download)
-   ```
+```bash
+cd arogyasetu
+./mvnw spring-boot:run
+```
 
-### Installation
+On Windows:
 
-First clone the project and let STS4 build its dependecies. Maven --> Update Project -->Run as SpringBoot
+```powershell
+cd arogyasetu
+.\mvnw.cmd spring-boot:run
+```
 
-1. Clone the repo
-   ```sh
-   git clone https://github.com/swapnil0076/swift-book-7091.git
-   ```
+The API runs on port `8080` and currently expects a local MySQL database named `db1`. Configure credentials in [`application.properties`](arogyasetu/src/main/resources/application.properties).
 
+## Backend modules
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+- User registration and login
+- Member and family-member management
+- Vaccine registration
+- Appointment booking and updates
+- Vaccination-center management
+- Vaccine inventory
+- Vaccine lookup
+- Dose-status tracking
 
-<h2>ER Diagram</h2>
-<img src = "https://user-images.githubusercontent.com/58816804/237027318-c2b00d15-c863-42ff-8cba-a2d5cd588c5a.png"/>
+## API integration status
 
-<h2>Related Interfaces</h2>
-<img  src ="https://user-images.githubusercontent.com/58816804/237030373-09c1e1b7-9e9e-4b79-9481-150c7c35f518.jpeg"/>
+The React UI currently uses realistic mock data for the dashboard and authentication navigation. The next integration step is connecting the React data layer to the Spring Boot endpoints under `/app`, including authentication, member registration, center availability, inventory and appointment booking.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+## Project structure
 
-<!-- USAGE EXAMPLES -->
-## Modules
-This Application Consist 7 Modules
+```text
+Health-Connect/
+├── frontend/       # Vite + React application
+├── arogyasetu/      # Spring Boot REST API
+└── README.md
+```
 
-- Vaccine Registration Module
-- Booking Appointment Module.
-- Vaccination Center Module.
-- Vaccine Module.
-- Vaccine Inventory Module.
-- Search Module.
+## Validation
 
-<br/>
-<div align = "center">
-<h1>Spring Security Working Map</h1>
-<img src = "https://github.com/swapnil0076/swift-book-7091/assets/58816804/a4979ead-b892-4bed-ab8b-4c02dd0076a4"/>
-<br/>
-  </div>
-
-
-
-<h1></h1>
-## Roadmap ## <br/>
- - [✅] Made ER Diagram <br/>
- - [✅] Added POJO classes <br/>
- - [✅] Made mappings <br/>
- - [✅] Designed Database using MYSQL <br/>
- - [✅] Added Additional Exceptions and Dependencies.<br/>
- - [✅] Added "signUp" logics with Controlller.<br/>
- - [✅] Added "Login" logics with Controlller.<br/>
- - [✅] Added "ID" logics with Controlller.<br/>
- - [✅] Tested Using Postman<br/>
- - [✅] Tested Using Swagger<br/>
- <p align="right">(<a href="#readme-top">back to top</a>)</p>
- ## Contributors ## <br/>
- - Swapnil Dhiman <br/>
- - Deepanshu Deep <br/>
- - Lokesh Gola <br/>
- <p align="right">(<a href="#readme-top">back to top</a>)</p>
- 
-## Acknowledgments
-We are always looking for ways to improve our Application, and I would like to request your feedback on our project. Your opinions matter for us and your feedback is used to improve how we work and ensure we deliver a consistently high-quality service.
-
-Thank You.
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
- 
+The frontend production build currently passes with `npm run build`.
